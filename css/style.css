@@ -1,0 +1,98 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #fafafa;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+/* 主页 */
+.hero { margin-bottom: 48px; }
+.hero h1 { font-size: 32px; margin-bottom: 8px; }
+.hero .tagline { color: #666; font-size: 16px; margin-bottom: 16px; }
+.hero .bio { color: #444; font-size: 15px; }
+
+.section { margin-bottom: 40px; }
+.section h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* 文章列表 */
+.post-list { list-style: none; }
+.post-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+.post-list a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 15px;
+}
+.post-list a:hover { color: #2563eb; }
+.post-list .date {
+  color: #999;
+  font-size: 13px;
+  margin-right: 12px;
+}
+
+/* 文章页 */
+.article-header { margin-bottom: 32px; }
+.article-header .back {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+.article-header .back:hover { color: #2563eb; }
+.article-header h1 {
+  font-size: 28px;
+  margin: 16px 0 8px;
+  line-height: 1.3;
+}
+.article-header .meta {
+  color: #999;
+  font-size: 14px;
+}
+
+.article-content h2 {
+  font-size: 20px;
+  margin: 32px 0 12px;
+}
+.article-content p { margin-bottom: 16px; }
+.article-content code {
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.article-content pre {
+  background: #1a1a1a;
+  color: #eee;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 16px;
+}
+.article-content pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+footer {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e5e5;
+  color: #999;
+  font-size: 13px;
+  text-align: center;
+}
