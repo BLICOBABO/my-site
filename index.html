@@ -3,28 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>你的名字 · 个人主页</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>姚煜航 · 个人主页</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <header class="site-nav">
+    <div class="site-nav-inner">
+      <a class="site-nav-brand" href="index.html">姚煜航</a>
+      <nav aria-label="主导航">
+        <ul class="site-nav-links">
+          <li><a href="index.html" aria-current="page">首页</a></li>
+          <li><a href="pages/resume.html">简历</a></li>
+          <li><a href="pages/works.html">作品</a></li>
+          <li><a href="pages/articles.html">文章</a></li>
+          <li><a href="pages/quantified.html">量化自我</a></li>
+          <li><a href="pages/review.html">年度回顾</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <div class="container">
-    <div class="hero">
-      <h1>你的名字</h1>
-      <p class="tagline">一句话介绍自己，比如：后端开发 · 在读硕士 · 动手爱好者</p>
-      <p class="bio">
-        这里写一段个人简介。你是谁，在做什么，对什么感兴趣。
-        比如：XX大学硕士在读，方向是大模型智能体。
-        白天写代码，晚上看书、健身、做饭。
-      </p>
+    <div class="hero-row">
+      <section class="intro">
+        <div class="intro-photo">
+          <img src="assets/images/715668d7c0bac938e2b87a76987f948_compressed_compressed.jpg" alt="姚煜航的照片">
+        </div>
+        <div class="intro-text">
+          <h1 class="intro-name">姚煜航</h1>
+          <p class="intro-subtitle">后端开发 · 在读硕士 · 大模型智能体方向</p>
+          <p class="intro-desc">
+            武汉理工大学电子信息硕士在读，方向是大模型智能体。白天在腾讯 WXG 写后端、调智能体，晚上看书、健身、做饭。
+            信奉「把复杂系统拆到底层再讲明白」。
+          </p>
+        </div>
+      </section>
+
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">yyh@dev: ~</span>
+        </div>
+        <div class="terminal-body" id="terminal-type"></div>
+        <noscript>
+          <div class="terminal-body">
+            <p><span class="prompt">yyh@dev:~$</span> whoami</p>
+            <p class="output">姚煜航 · 后端开发 · 在读硕士 · 大模型智能体方向</p>
+            <p><span class="prompt">yyh@dev:~$</span> cat about.txt</p>
+            <p class="output">
+              武汉理工大学电子信息硕士在读，方向是大模型智能体。<br>
+              白天在腾讯 WXG 写后台：做来华通运营工具、搭 OpenAPI 统一入口、<br>
+              落地 MCP 工具支撑智能体开发。<br>
+              白天写代码，晚上看书、健身、做饭，偶尔坐公交漫游。<br>
+              相信一句话：把系统拆到最底层，才能讲得清、改得动。
+            </p>
+            <p><span class="prompt">yyh@dev:~$</span> <span class="cursor"></span></p>
+          </div>
+        </noscript>
+      </div>
     </div>
 
     <div class="section">
       <h2>正在做的事</h2>
-      <ul class="post-list">
-        <li>腾讯 WXG · 研发实习生（2026.05 - 至今）</li>
-        <li>XX大学 · 电子信息硕士（2024.09 - 至今）</li>
-        <li>维护这个个人网站</li>
+      <ul class="now-list">
+        <li>
+          <div class="now-head">
+            <span class="now-title">腾讯 WXG · 后台开发实习生</span>
+            <span class="now-time">2026.05 – 至今</span>
+          </div>
+          <p class="now-desc">微信支付线，来华通运营工具全流程开发，落地 MCP / 智能体</p>
+        </li>
+        <li>
+          <div class="now-head">
+            <span class="now-title">武汉理工 · 电子信息硕士</span>
+            <span class="now-time">2024.09 – 至今</span>
+          </div>
+          <p class="now-desc">大模型智能体方向，方向探索与工程落地并重</p>
+        </li>
+        <li>
+          <div class="now-head">
+            <span class="now-title">智能视频拼接监测系统（负责人）</span>
+            <span class="now-time">2025.09 – 2026.03</span>
+          </div>
+          <p class="now-desc">C++/Qt/Unity，13 路相机高并发，单帧时延 100ms→30ms</p>
+        </li>
+        <li>
+          <div class="now-head">
+            <span class="now-title">维护这个个人网站</span>
+            <span class="now-time">持续</span>
+          </div>
+          <p class="now-desc">记录技术思考与量化自我，折腾中</p>
+        </li>
       </ul>
+    </div>
+
+    <div class="section">
+      <h2>我的书架</h2>
+      <div class="shelf-grid">
+        <div class="shelf-group">
+          <h3>正在读 / 常翻</h3>
+          <ul class="shelf-list">
+            <li>《深入理解计算机系统》(CSAPP) —— 把计算机讲到底层</li>
+            <li>《Redis 设计与实现》—— 缓存、跳表、内存回收</li>
+            <li>《高性能 MySQL》—— 索引与 SQL 调优</li>
+          </ul>
+        </div>
+        <div class="shelf-group">
+          <h3>C++ 与系统编程</h3>
+          <ul class="shelf-list">
+            <li>《C++ Primer》</li>
+            <li>《Effective C++》</li>
+            <li>《Unix 环境高级编程》(APUE)</li>
+          </ul>
+        </div>
+        <div class="shelf-group">
+          <h3>数据库与中间件</h3>
+          <ul class="shelf-list">
+            <li>《高性能 MySQL》</li>
+            <li>《Redis 开发与运维》</li>
+          </ul>
+        </div>
+        <div class="shelf-group">
+          <h3>大模型与智能体</h3>
+          <ul class="shelf-list">
+            <li>《动手学深度学习》</li>
+            <li>《大模型应用开发》</li>
+            <li>Agent 设计模式相关（Function Calling / MCP）</li>
+          </ul>
+        </div>
+        <div class="shelf-group">
+          <h3>工程与认知</h3>
+          <ul class="shelf-list">
+            <li>《重构：改善既有代码的设计》</li>
+            <li>《代码整洁之道》</li>
+            <li>《禅与摩托车维修艺术》</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>技术栈 / 关键词</h2>
+      <ul class="tag-list">
+        <li>C++</li>
+        <li>Linux 系统编程</li>
+        <li>Qt</li>
+        <li>计算机网络</li>
+        <li>操作系统</li>
+        <li>MySQL</li>
+        <li>Redis</li>
+        <li>SQL 调优</li>
+        <li>System V 共享内存</li>
+        <li>Agent</li>
+        <li>MCP</li>
+        <li>Function Calling</li>
+        <li>大模型应用</li>
+        <li>后端架构</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>座右铭</h2>
+      <blockquote class="motto">把系统拆到最底层，才能讲得清、改得动。</blockquote>
     </div>
 
     <div class="section">
@@ -42,8 +184,10 @@
     </div>
 
     <footer>
-      © 2026 你的名字 · Built with HTML & CSS
+      © 2026 姚煜航 · Built with HTML & CSS
     </footer>
   </div>
+  <script src="assets/js/binary-rain.js"></script>
+  <script src="assets/js/terminal-type.js"></script>
 </body>
 </html>
