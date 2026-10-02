@@ -9,7 +9,7 @@
     { kind: "command", text: "cat about.txt" },
     {
       kind: "output",
-      text: "武汉理工大学电子信息硕士在读，方向是大模型智能体。\n白天在腾讯 WXG 写后台：做来华通运营工具、搭 OpenAPI 统一入口、\n落地 MCP 工具支撑智能体开发。\n白天写代码，晚上看书、健身、做饭，偶尔坐公交漫游。\n相信一句话：把系统拆到最底层，才能讲得清、改得动。",
+      text: "武汉理工大学电子信息硕士在读，方向是大模型智能体。\n现在在做 3DGS 人体重建方向的研究，写论文，持续学习前沿技术。\n晚上看书、健身、做饭，偶尔坐公交漫游。\n相信一句话：把系统拆到最底层，才能讲得清、改得动。",
     },
     { kind: "command", text: "" },
   ];
@@ -19,7 +19,7 @@
       '<p><span class="prompt">' + promptText + "</span> whoami</p>" +
       '<p class="output">姚煜航 · 后端开发 · 在读硕士 · 大模型智能体方向</p>' +
       '<p><span class="prompt">' + promptText + "</span> cat about.txt</p>" +
-      '<p class="output">武汉理工大学电子信息硕士在读，方向是大模型智能体。<br>白天在腾讯 WXG 写后台：做来华通运营工具、搭 OpenAPI 统一入口、<br>落地 MCP 工具支撑智能体开发。<br>白天写代码，晚上看书、健身、做饭，偶尔坐公交漫游。<br>相信一句话：把系统拆到最底层，才能讲得清、改得动。</p>' +
+      '<p class="output">武汉理工大学电子信息硕士在读，方向是大模型智能体。<br>现在在做 3DGS 人体重建方向的研究，写论文，持续学习前沿技术。<br>晚上看书、健身、做饭，偶尔坐公交漫游。<br>相信一句话：把系统拆到最底层，才能讲得清、改得动。</p>' +
       '<p><span class="prompt">' + promptText + '</span> <span class="cursor"></span></p>';
     return;
   }

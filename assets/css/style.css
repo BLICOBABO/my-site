@@ -676,3 +676,140 @@ footer {
     gap: 10px;
   }
 }
+
+/* ===== 首页改版：正在做的事分块 ===== */
+.now-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 14px;
+}
+.now-card {
+  padding: 14px 18px;
+  border: 1px solid #019e01;
+  border-radius: 12px;
+  background: rgba(152, 251, 152, 0.04);
+  transition: border-color 0.2s, background 0.2s;
+}
+.now-card:hover {
+  border-color: #27c93f;
+  background: rgba(152, 251, 152, 0.08);
+}
+
+/* ===== 首页改版：书架封面墙 ===== */
+.shelf-wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 14px;
+}
+.book-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  height: 148px;
+  padding: 8px 6px;
+  border-radius: 8px 8px 4px 4px;
+  border: 1px solid rgba(94, 255, 197, 0.25);
+  cursor: default;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.book-card:hover {
+  transform: translateY(-4px);
+  border-color: #019e01;
+  box-shadow: 0 6px 18px rgba(0, 255, 170, 0.18);
+}
+.book-card:nth-child(3n+1) { background: linear-gradient(160deg, #0e2a1c, #143827); }
+.book-card:nth-child(3n+2) { background: linear-gradient(160deg, #102a33, #163a40); }
+.book-card:nth-child(3n)   { background: linear-gradient(160deg, #123123, #0f2a3a); }
+.book-title {
+  writing-mode: vertical-rl;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  color: #eaffea;
+  max-height: 96px;
+  overflow: hidden;
+}
+.book-sub {
+  font-size: 10px;
+  color: #6f9e6f;
+  letter-spacing: 0.06em;
+}
+
+/* ===== 首页改版：技术栈词云 v2（纯文字层次词云） ===== */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px 28px;
+  padding: 22px 4px 26px;
+}
+.tag-cloud span {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: default;
+  transition: color 0.2s, text-shadow 0.2s, transform 0.2s;
+}
+.tag-cloud span:hover {
+  color: #ffffff;
+  text-shadow: 0 0 14px rgba(94, 255, 197, 0.55);
+  transform: translateY(-2px);
+}
+.tag-cloud .cloud-xl {
+  font-size: 30px;
+  font-weight: 800;
+  color: #eaffea;
+  text-shadow: 0 0 18px rgba(94, 255, 197, 0.35);
+}
+.tag-cloud .cloud-l {
+  font-size: 21px;
+  font-weight: 700;
+  color: #c6ffc6;
+}
+.tag-cloud .cloud-m {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #019e01;
+}
+.tag-cloud .cloud-s {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #6f9e6f;
+}
+
+/* ===== 首页改版：词云 v3 canvas 容器 ===== */
+.tag-cloud-canvas {
+  width: 100%;
+  padding: 6px 0;
+}
+.tag-cloud-canvas canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+/* 词云 JS 失败时的纯文字降级 */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 14px;
+  padding: 14px 0;
+}
+.tag-cloud span {
+  font-size: 13px;
+  color: #c6ffc6;
+}
+
+/* ===== 首页微调：照片居中 + 词云限宽居中 ===== */
+.intro-photo img {
+  margin: 0 auto;
+}
+.tag-cloud-canvas {
+  max-width: 720px;
+  margin: 0 auto;
+}
