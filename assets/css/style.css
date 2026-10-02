@@ -434,122 +434,109 @@ footer {
   text-align: center;
 }
 
-/* ===== 简历页：终端 + git log 风格 ===== */
-.resume-terminal {
-  margin-bottom: 32px;
-}
-
-.resume-terminal .terminal-body {
-  min-height: 0;
-  padding: 26px;
-  line-height: 1.9;
-}
-
-.resume-block {
-  margin-bottom: 30px;
-}
-.resume-block:last-child {
-  margin-bottom: 0;
-}
-
-.resume-terminal .resume-cmd {
-  margin: 0 0 16px !important;
-  border-bottom: 1px solid rgba(94, 255, 197, 0.12);
-  padding-bottom: 10px;
-}
-.cmd-text {
-  color: #ffffff;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+/* ===== 简历页：git log 风格 ===== */
+.resume {
+  margin-bottom: 8px;
 }
 
 /* 页头 */
-.resume-terminal .resume-header {
-  padding: 4px 0 2px;
+.resume .resume-header {
+  margin-bottom: 44px;
 }
-.resume-terminal .resume-header .name {
+.resume .resume-header .name {
   font-size: 34px;
   letter-spacing: 0.06em;
   margin: 0 0 10px;
   color: #ffffff;
   text-shadow: 0 0 18px rgba(94, 255, 197, 0.35);
 }
-.resume-terminal .resume-header .role {
+.resume .resume-header .role {
   color: #c6ffc6;
   font-size: 15px;
   margin: 0 0 6px;
 }
-.resume-terminal .resume-header .goal {
+.resume .resume-header .goal {
   color: #019e01;
   font-size: 14px;
   margin: 0 0 6px;
 }
-.resume-terminal .resume-header .contact {
+.resume .resume-header .contact {
   color: #ffffff;
   font-size: 14px;
   margin: 0 0 6px;
 }
-.resume-terminal .resume-header .export {
-  color: #7c8a99;
-  font-size: 12px;
-  margin: 2px 0 0;
+
+/* 区块 */
+.resume .resume-section {
+  margin-bottom: 40px;
+}
+.resume .resume-section:last-child {
+  margin-bottom: 0;
+}
+.resume .resume-section h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(94, 255, 197, 0.22);
+  color: #019e01;
 }
 
 /* git log 提交 */
-.resume-terminal .git-log {
+.resume .git-log {
   margin: 0;
 }
-.resume-terminal .commit {
+.resume .commit {
   padding: 12px 0 14px 16px;
   border-left: 2px solid rgba(94, 255, 197, 0.28);
   margin-bottom: 12px;
 }
-.resume-terminal .commit:last-child {
+.resume .commit:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.resume-terminal .commit-line {
+.resume .commit-line {
   margin: 0 0 6px !important;
   word-break: break-word;
+  font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
 }
-.resume-terminal .kw {
+.resume .kw {
   color: #019e01;
   font-weight: 600;
 }
-.resume-terminal .hash {
+.resume .hash {
   color: #ffbd2e;
 }
-.resume-terminal .ref {
+.resume .ref {
   color: #4dd0e1;
 }
-.resume-terminal .date {
+.resume .date {
   color: #8b9aa9;
 }
-.resume-terminal .status {
+.resume .status {
   color: #27c93f;
   font-weight: 600;
 }
-.resume-terminal .commit-subject {
+.resume .commit-subject {
   color: #ffffff;
   font-weight: 600;
   margin: 0 0 4px !important;
 }
-.resume-terminal .commit-meta {
+.resume .commit-meta {
   color: #b7c6d4;
   margin: 0 0 6px !important;
 }
-.resume-terminal .commit-list {
+.resume .commit-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.resume-terminal .commit-list li {
+.resume .commit-list li {
   position: relative;
   padding-left: 18px;
   color: #d6e2ee;
   margin: 3px 0;
 }
-.resume-terminal .commit-list li::before {
+.resume .commit-list li::before {
   content: "▸";
   position: absolute;
   left: 2px;
@@ -557,133 +544,135 @@ footer {
 }
 
 /* 轨迹地图 */
-.resume-terminal .journey-meta {
+.resume .journey-meta {
   color: #8b9aa9;
   font-size: 13px;
   margin: 0 0 6px !important;
+  font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
 }
-.resume-terminal .journey-track {
+.resume .journey-track {
   color: #c6ffc6;
   margin: 0 0 12px !important;
 }
-.resume-terminal .route {
+.resume .route {
   color: #ffbd2e;
 }
-.resume-terminal .journey-list {
+.resume .journey-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.resume-terminal .journey-list li {
+.resume .journey-list li {
   padding: 7px 0;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
 }
-.resume-terminal .journey-list li:last-child {
+.resume .journey-list li:last-child {
   border-bottom: none;
 }
-.resume-terminal .idx {
+.resume .idx {
   color: #4dd0e1;
   margin-right: 12px;
+  font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
 }
-.resume-terminal .j-time {
+.resume .j-time {
   color: #019e01;
   margin-right: 12px;
   white-space: nowrap;
 }
 
 /* 技能图谱 */
-.resume-terminal .radar-title {
+.resume .radar-title {
   color: #8b9aa9;
   font-size: 13px;
   margin: 0 0 12px !important;
 }
-.resume-terminal .radar-list {
+.resume .radar-list {
   list-style: none;
   margin: 0 0 22px;
   padding: 0;
 }
-.resume-terminal .radar-list li {
+.resume .radar-list li {
   display: flex;
   align-items: center;
   gap: 14px;
   margin: 9px 0;
 }
-.resume-terminal .skill-name {
+.resume .skill-name {
   flex: 0 0 158px;
   color: #ffffff;
 }
-.resume-terminal .skill-bar {
+.resume .skill-bar {
   flex: 1;
   height: 8px;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 999px;
   overflow: hidden;
 }
-.resume-terminal .skill-fill {
+.resume .skill-fill {
   display: block;
   height: 100%;
   background: linear-gradient(90deg, #019e01, #27c93f);
   border-radius: 999px;
 }
-.resume-terminal .skill-val {
+.resume .skill-val {
   flex: 0 0 36px;
   color: #019e01;
   text-align: right;
   font-size: 13px;
 }
-.resume-terminal .skill-group {
+.resume .skill-group {
   margin-bottom: 14px;
 }
-.resume-terminal .skill-group:last-child {
+.resume .skill-group:last-child {
   margin-bottom: 0;
 }
-.resume-terminal .sg-title {
+.resume .sg-title {
   color: #c6ffc6;
   font-weight: 600;
   margin: 0 0 2px !important;
 }
-.resume-terminal .sg-desc {
+.resume .sg-desc {
   color: #d6e2ee;
   margin: 0 !important;
 }
 
 /* 荣誉与证书 */
-.resume-terminal .ls-list {
+.resume .ls-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.resume-terminal .ls-list li {
+.resume .ls-list li {
   position: relative;
   padding-left: 18px;
   color: #ffffff;
   margin: 4px 0;
 }
-.resume-terminal .ls-list li::before {
+.resume .ls-list li::before {
   content: "•";
   position: absolute;
   left: 2px;
   color: #27c93f;
 }
-.resume-terminal .ls-list li.todo {
+.resume .ls-list li.todo {
   color: #7c8a99;
   font-style: italic;
 }
 
 /* 工作之外 */
-.resume-terminal .hobbies {
+.resume .hobbies {
   color: #d6e2ee;
   margin: 0 !important;
 }
 
 @media (max-width: 720px) {
-  .resume-terminal .resume-header .name {
+  .resume .resume-header .name {
     font-size: 26px;
   }
-  .resume-terminal .skill-name {
+  .resume .skill-name {
     flex: 0 0 120px;
   }
-  .resume-terminal .radar-list li {
+  .resume .radar-list li {
     gap: 10px;
   }
 }

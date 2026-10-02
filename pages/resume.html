@@ -26,46 +26,36 @@
   <div class="container">
     <div class="hero">
       <h1>简历</h1>
-      <p class="page-lead">以终端 + git log 方式组织的简历，可直接导出 PDF。</p>
+      <p class="page-lead">以 git log 方式组织的简历，可直接导出 PDF。</p>
     </div>
 
-    <div class="terminal resume-terminal">
-      <div class="terminal-bar">
-        <span class="dot red"></span>
-        <span class="dot yellow"></span>
-        <span class="dot green"></span>
-        <span class="terminal-title">yyh@dev: ~/resume</span>
-      </div>
-      <div class="terminal-body">
+    <div class="resume">
 
-        <!-- 页头 -->
-        <div class="resume-block">
-          <p class="resume-cmd"><span class="prompt">yyh@dev:~$</span> <span class="cmd-text">cat profile</span></p>
-          <div class="resume-header">
-            <h1 class="name">姚煜航</h1>
-            <p class="role">武汉理工大学・电子信息工程・硕士在读・后端 / Agent 方向</p>
-            <p class="goal">湖北人・求职意向：后台开发工程师</p>
-            <p class="contact">你的邮箱 · 你的 GitHub · 武汉 / 深圳（实习）</p>
-            <p class="export">export --pdf（如需）</p>
-          </div>
+      <!-- 页头 -->
+      <div class="resume-header">
+        <h1 class="name">姚煜航</h1>
+        <p class="role">武汉理工大学・电子信息工程・硕士在读・后端 / Agent 方向</p>
+        <p class="goal">湖北人・求职意向：后台开发工程师</p>
+        <p class="contact">你的邮箱 · 你的 GitHub · 武汉 / 深圳（实习）</p>
+      </div>
+
+      <!-- 轨迹地图 -->
+      <section class="resume-section">
+        <h2>轨迹地图</h2>
+        <div class="journey">
+          <p class="journey-meta">journey.log · 2 cities · ≈1,150 km</p>
+          <p class="journey-track">● TRACKING・life_route.kml：<span class="route">武汉 → 深圳</span></p>
+          <ol class="journey-list">
+            <li><span class="idx">[0]</span><span class="j-time">2020 - 2024</span>武汉 Wuhan・武汉理工大学・本科</li>
+            <li><span class="idx">[1]</span><span class="j-time">2024 - 至今</span>武汉 Wuhan・武汉理工大学・硕士在读</li>
+            <li><span class="idx">[2]</span><span class="j-time">2026.05 - 至今</span>深圳 Shenzhen・腾讯 WXG・实习进行中</li>
+          </ol>
         </div>
-        <!-- 轨迹地图 -->
-        <div class="resume-block">
-          <p class="resume-cmd"><span class="prompt">yyh@dev:~$</span> <span class="cmd-text">cat journey.log</span></p>
-          <div class="journey">
-            <p class="journey-meta">journey.log · 2 cities · ≈1,150 km</p>
-            <p class="journey-track">● TRACKING・life_route.kml：<span class="route">武汉 → 深圳</span></p>
-            <ol class="journey-list">
-              <li><span class="idx">[0]</span><span class="j-time">2020 - 2024</span>武汉 Wuhan・武汉理工大学・本科</li>
-              <li><span class="idx">[1]</span><span class="j-time">2024 - 至今</span>武汉 Wuhan・武汉理工大学・硕士在读</li>
-              <li><span class="idx">[2]</span><span class="j-time">2026.05 - 至今</span>深圳 Shenzhen・腾讯 WXG・实习进行中</li>
-            </ol>
-          </div>
-        </div>
+      </section>
 
         <!-- 教育经历 -->
-        <div class="resume-block">
-          <p class="resume-cmd"><span class="prompt">yyh@dev:~$</span> <span class="cmd-text">git log --education</span></p>
+        <section class="resume-section">
+          <h2>教育经历</h2>
           <div class="git-log">
             <div class="commit">
               <p class="commit-line"><span class="kw">commit</span> <span class="hash">4b8e0d2</span> <span class="ref">(education)</span> <span class="date">2024.09 - 至今</span></p>
@@ -82,11 +72,11 @@
               <p class="commit-meta">信息工程学院 · GPA 3.26/5.00（专业前 40%）</p>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- 实习经历 -->
-        <div class="resume-block">
-          <p class="resume-cmd"><span class="prompt">yyh@dev:~$</span> <span class="cmd-text">git log --career</span></p>
+        <section class="resume-section">
+          <h2>实习经历</h2>
           <div class="git-log">
             <div class="commit">
               <p class="commit-line"><span class="kw">commit</span> <span class="hash">7d1fa90</span> <span class="ref">(HEAD -&gt; career)</span> <span class="date">2026.05 - 至今</span> <span class="status">· RUNNING</span></p>
@@ -101,11 +91,11 @@
               </ul>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- 项目经历 -->
-        <div class="resume-block">
-          <p class="resume-cmd"><span class="prompt">yyh@dev:~$</span> <span class="cmd-text">git log --projects</span></p>
+        <section class="resume-section">
+          <h2>项目经历</h2>
           <div class="git-log">
             <div class="commit">
               <p class="commit-line"><span class="kw">commit</span> <span class="hash">8aa41f0</span> <span class="date">(2025.09 - 2026.03)</span> <span class="status">· 项目负责人</span></p>
@@ -120,11 +110,11 @@
               </ul>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- 技能图谱 -->
-        <div class="resume-block">
-          <p class="resume-cmd"><span class="prompt">yyh@dev:~$</span> <span class="cmd-text">skills --radar</span></p>
+        <section class="resume-section">
+          <h2>技能图谱</h2>
           <div class="skills">
             <p class="radar-title">雷达图维度（可配数值）</p>
             <ul class="radar-list">
@@ -148,30 +138,30 @@
               <p class="sg-desc">熟悉 Agent 开发流程，有实际落地经验：原生 MCP 复用 OpenAPI 鉴权、Skill 调 OpenAPI、工作流编排、身份头与鉴权对齐。</p>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- 荣誉与证书 -->
-        <div class="resume-block">
-          <p class="resume-cmd"><span class="prompt">yyh@dev:~$</span> <span class="cmd-text">ls ~/achievements</span></p>
+        <section class="resume-section">
+          <h2>荣誉与证书</h2>
           <ul class="ls-list">
             <li>校二等奖学金・2024</li>
             <li>校三等奖学金・2025</li>
             <li>GPA 前 40%（硕士 3.78 / 本科 3.26）</li>
             <li class="todo">待补充：CET / 竞赛 / 证书（按实际填）</li>
           </ul>
-        </div>
+        </section>
 
         <!-- 工作之外 -->
-        <div class="resume-block">
-          <p class="resume-cmd"><span class="prompt">yyh@dev:~$</span> <span class="cmd-text">cat hobbies.txt</span></p>
+        <section class="resume-section">
+          <h2>工作之外</h2>
           <p class="hobbies">健身・做饭（素食）・公交漫游・阅读・折腾个人网站 / 量化自我。</p>
-        </div>
+        </section>
 
-      </div>
     </div>
 
     <footer>© 2026 姚煜航</footer>
   </div>
   <script src="../assets/js/binary-rain.js"></script>
+  <script src="../assets/js/agent-widget.js"></script>
 </body>
 </html>
